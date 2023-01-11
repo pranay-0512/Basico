@@ -1,0 +1,11 @@
+#1e1e23 nav color
+
+#8c745c bg color
+
+background-image: radial-gradient(circle, #1e1e23, #393039, #594349, #775953, #8c745c);
+
+font-family: 'Roboto', sans-serif;
+
+₹
+
+onclick="this.parentElement.parentElement.style.display='none'"
