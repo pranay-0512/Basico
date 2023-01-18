@@ -16,16 +16,15 @@
 <body>
     <nav class="flex-nav-container">
         <div class="left-nav">
-            <div><a href="">Member benefits...</a></div>
+            <div></div>
         </div>
         <div>
-            <a class="main-logo-href" href="/html/index.html"><img class="main-logo" src="/images/LOGO/BasicoLogo.png"
-                    alt=""></a>
+            <a class="main-logo-href" href="/html/index.html"><img class="main-logo" src="/images/LOGO/BasicoLogo.png" alt=""></a>
             <ul class="mid-nav">
-                <li class="mid-nav-item"><a href="#fit" onclick="clicked()">T-shirts</a></li>
-                <li class="mid-nav-item"><a href="#sale" onclick="onclicked()">Shirts</a></li>
-                <li class="mid-nav-item"><a href="#pattern">Jackets</a></li>
-                <li class="mid-nav-item"><a href="#footer">Accessories</a></li>
+                <li class="mid-nav-item"><a href="/html/tshirt.html">T-shirts</a></li>
+                <li class="mid-nav-item"><a href="/html/shirt.html">Shirts</a></li>
+                <li class="mid-nav-item"><a href="/html/jacket.html">Jackets</a></li>[]
+                <li class="mid-nav-item"><a href="/html/accessory.html">Accessories</a></li>
             </ul>
         </div>
         <div class="right-nav">
@@ -38,14 +37,15 @@
                         <li><a href=""><img class="nav-images" src="/images/LOGO/favorite.png" alt=""></a></li>
                     </div>
                     <div>
-                        <li><a href=""><img class="nav-images" src="/images/LOGO/shopping-bag.png" alt=""></a></li>
+                        <li><a href="/html/shopping-cart.html"><img class="nav-images" src="/images/LOGO/shopping-bag.png" alt=""></a></li>
                     </div>
                 </ul>
             </div>
         </div>
     </nav>
     <main>
-        <h1 class="shopping-bag-title">Shopping Bag</h1>
+        <h1 class="address-title">Shopping-Bag</h1>
+        <h1 class="shopping-bag-title container">Shopping Bag</h1>
         <div class="shopping-bag-and-total">
             <div class="shopping-bag-box">
                 <!-- <div class="shopping-bag-items">
@@ -56,7 +56,7 @@
                 </div> -->
                 <div class="shopping-bag-items">
                     <img src="/images/MEN/TOP WEAR/model1-removebg-preview.jpg" alt="">
-                    
+
                     <div class="qqqq">
                         <span class="item-details">Regular Fit Printed Sweatshirt</span>
                         <span class="item-details">Color - White</span>
@@ -79,14 +79,14 @@
                 </div>
                 <div class="shopping-bag-items">
                     <img src="/images/MEN/TOP WEAR/model1-removebg-preview.jpg" alt="">
-                    
+
                     <div class="qqqq">
                         <span class="item-details">Regular Fit Printed Sweatshirt</span>
                         <span class="item-details">Color - White</span>
                         <span class="item-details">Size - L</span>
                         <span class="item-details">Price ₹999/-</span>
                     </div>
-                    <div class="delete-icon" >
+                    <div class="delete-icon">
                         <img src="/images/LOGO/icons8-trash-can.svg"
                             onclick="this.parentElement.parentElement.style.display='none'" alt="">
                     </div>
@@ -102,7 +102,7 @@
                 </div>
                 <div class="shopping-bag-items">
                     <img src="/images/MEN/TOP WEAR/model1-removebg-preview.jpg" alt="">
-                    
+
                     <div class="qqqq">
                         <span class="item-details">Regular Fit Printed Sweatshirt</span>
                         <span class="item-details">Color - White</span>
@@ -126,7 +126,27 @@
                 <!-- <h3>Total</h3> -->
             </div>
             <div class="total">
-                <span>Total and checkout Lorem, ipsum dolor</span> 
+                <span>Total and checkout Lorem, ipsum dolor</span>
+                <input type="text" placeholder="Add discount code here">
+                <div class="checkout-details"></div>
+                    <span>Order Value</span>
+                    <span>₹ 0.00</span>
+                <div class="checkout-details">
+                    <div class="total-box">
+                        <span>Total</span>
+                        <span>₹ 0.00</span>
+                    </div>
+                    <div>
+                        <pre>Prices and delivery costs are not confirmed until you've 
+reached the checkout.
+30 days withdrawal and free returns. Read more about <span>
+return and refund policy</span>
+Customers would receive an SMS/WhatsApp 
+notifications regarding deliveries on the registered 
+phone number.
+                        </pre>
+                    </div>
+                </div>
             </div>
         </div>
 

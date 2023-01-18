@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 /* Roboto Font */
 
 ::-webkit-scrollbar {
@@ -20,6 +21,10 @@ body {
     /* height: 200vh; */
     background-color: rgba(140, 116, 92);
     font-family: 'Roboto', sans-serif;
+}
+
+.scroll-snap {
+    scroll-snap-type: y proximity;
 }
 
 /* NAV bar starts here */
@@ -45,24 +50,9 @@ body {
 .left-nav div {
     position: absolute;
     top: 50px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-}
-
-.left-nav div a {
-    color: white;
-    text-decoration: none;
-    opacity: .8;
-    letter-spacing: 1px;
-}
-
-.left-nav div a:hover {
-    opacity: .6;
-}
-
-.left-nav div a:visited {
-    color: white;
-    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    opacity: .5;
 }
 
 .mid-nav {
@@ -138,6 +128,9 @@ body {
     width: 30px;
 }
 
+.address-title {
+    display: none;
+}
 
 /* NAV bar ends here */
 
@@ -233,7 +226,7 @@ footer {
 /* Main Body starts here */
 
 .container {
-    margin-top: 10vh;
+    margin-top: 5vh;
     margin-bottom: 10vh;
 
 }
@@ -297,10 +290,9 @@ footer {
 
 
 .shopping-bag-box {
-    border-right:2px solid #000;
+    border-right: 2px solid #000;
     margin: 10px;
     background-color: #C2A88E;
-    
     height: auto;
 }
 
@@ -331,7 +323,7 @@ footer {
 }
 
 .delete-icon img:hover {
-    cursor:pointer;
+    cursor: pointer;
     opacity: .7;
     border: 2px solid black;
 }
@@ -348,6 +340,41 @@ footer {
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: 600;
+}
+
+.checkout-details input {
+    background-color: #1e1e23;
+    border: 2px solid #1e1e23;
+}
+
+.checkout-details pre {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
+
+}
+
+.checkout-details pre span {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: 300;
+    /* text-decoration: underline; */
+}
+
+.total-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 2px solid #000;
+    margin-top: 10px;
+}
+
+.checkout-details pre span:hover {
+    opacity: .7;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 
@@ -412,6 +439,110 @@ footer {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.container-img a :hover {
+    opacity: .7;
+}
+
+/* Highlight */
 
 
+mark {
+    /* font-weight: 800; */
+    -webkit-animation: 1s highlight 2s 1 normal forwards;
+    animation: 1.5s highlight 1s 1 forwards;
+    background-color: none;
+    background: linear-gradient(90deg, #8c745c 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transform: rotate(10deg);
+    /* top: -1px;
+    left: -1px; */
+    border-radius: 50% 30% 15% 24%;
+    padding: 1px 5px 1px 0px;
+}
 
+
+@-webkit-keyframes highlight {
+    to {
+        background-position: 0 0;
+    }
+}
+
+@keyframes highlight {
+    to {
+        background-position: 0 0;
+    }
+}
+
+.member {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    background-color: #c2a88e;
+}
+
+.member div {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.member div h1 {
+    font-size: 50px;
+    text-align: right;
+    color: #8c745c;
+    font-weight: 900;
+}
+
+.member img {
+    /* margin-right: 0px; */
+    margin: 25px 0px 25px 0px;
+    width: 450px;
+
+}
+
+.dynamic-highlight {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.slideshow-container {
+    
+    max-width: auto;
+    max-height: 1000px;
+    position: relative;
+    margin: 100px;
+}
+
+
+.mySlides {
+    display: none;
+}
+
+
+.text {
+    color: #1e1e23;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
